@@ -55,8 +55,8 @@ const TodoList = () => {
   }
 
   function addTask(input) {
-    if(input.trim().length<50)alert("You can enter only 50 character long input")
-    if (input.trim().length > 0 && input.trim().length<50) {
+    if(input.trim().length>40)alert("You can enter only 50 character long input")
+    if (input.trim().length > 0 && input.trim().length<40) {
       let tasklist = tasks;
       tasklist.push({
         name: input.trim(),
